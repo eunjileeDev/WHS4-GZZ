@@ -117,6 +117,7 @@ MODULES: List[Module] = [
         argv=[PY, "-m", "client.LocalGuard.external_access.process_access.runner",
               "--game-exe", GAME_EXE,
               "--session-id", "{session}", "--player-id", "{player}",
+              "--t0", "{t0}",
               "--output", "client/LocalGuard/external_access/logs/external_access.jsonl"],
         mode=CONTINUOUS,
         note="위험 핸들 감시. 상대 import 라 -m 으로만 돈다",
